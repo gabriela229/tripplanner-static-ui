@@ -6,3 +6,24 @@
 #map-canvas {
     height: 50vh;
 }
+
+.btn-circle {
+  border-radius: 100%;
+}
+
+.btn-add {
+  border: none;
+  color: lighten(grey, 10%);
+  background-color: lighten(skyblue, 10%);
+}
+
+.btn-day {
+  border: solid;
+  border-color: lighten(skyblue, 10%);
+  color: lighten(skyblue, 10%);
+
+}
+
+.drop {
+  width: 90%;
+}

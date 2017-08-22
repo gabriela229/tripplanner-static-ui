@@ -6,35 +6,76 @@
       </div>
 
       <div class='col-md-4'>
-            <h4>Hotels</h4>
-            <select>
-                  {% for hotel in hotels%}
+            <div class='panel panel-default'>
+                  <div class='panel-body'>
 
-                        <option>{{hotel.name}}</option>
+                              <div class='form-group'>
+                                    <h4>Hotels</h4>
 
-                  {% endfor %}
-            </select>
+                                          <select  id='hotels' class='drop input-sm'>
+                                                {% for hotel in hotels%}
 
-            <h4>Restaurants</h4>
-            <select>
-                  {% for restaurant in restaurants%}
+                                                      <option>{{hotel.name}}</option>
 
-                        <option>{{restaurant.name}}</option>
+                                                {% endfor %}
+                                          </select>
+                                          <button class='btn btn-default btn-sm btn-circle btn-add pull-right'>+</button>
 
-                  {% endfor %}
-            </select>
+                              </div>
 
-            <h4>Activities</h4>
-            <select>
-                  {% for act in activities%}
+                              <div class='form-group'>
+                                    <h4>Restaurants</h4>
+                                    <select class='drop input-sm'>
+                                          {% for restaurant in restaurants%}
 
-                        <option>{{act.name}}</option>
+                                                <option>{{restaurant.name}}</option>
 
-                  {% endfor %}
-            </select>
+                                          {% endfor %}
+                                    </select>
+                                    <div class='btn btn-default btn-sm btn-circle btn-add pull-right'><div>+</div></div>
+                              </div>
+                              <div class='form-group'>
+                                    <h4>Activities</h4>
+                                    <select class='drop input-sm'>
+                                          {% for act in activities%}
 
-            <div>
-            [[Planner]]
+                                                <option>{{act.name}}</option>
+
+                                          {% endfor %}
+                                    </select>
+                                    <button class='btn btn-default btn-sm btn-circle btn-add pull-right'>+</button>
+                              </div>
+
+                  </div>
+            </div>
+            <div class='panel panel-default'>
+                        <div class='panel-body'>
+                  <h3>Day 1</h3>
+                  <button class='btn btn-danger btn-sm btn-circle pull-right'>x</button>
+                        </div>
+            </div>
+            <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                        <div class='btn btn-circle btn-day'><span>1</span></div>
+                        <div class='btn btn-circle btn-day'><span>2</span></div>
+                        <div class='btn btn-circle btn-day'><span>3</span></div>
+                        <div class='btn btn-circle btn-day'><span>+</span></div>
+                  </div>
+                  <div class='panel-body'>
+                        <div>
+                              <h4>My Hotel</h4>
+                              <p>Some Text</p><button class='btn btn-danger btn-sm btn-circle  pull-right'>x</button>
+                        </div>
+                        <div>
+                              <h4>My Restaurants</h4>
+                              <button class='btn btn-danger btn-sm btn-circle pull-right'>x</button>
+                        </div>
+                        <div>
+                              <h4>My Activites</h4>
+                              <button class='btn btn-danger btn-sm btn-circle pull-right'>x</button>
+                        </div>
+                  </div>
+
             </div>
       </div>
 </div>

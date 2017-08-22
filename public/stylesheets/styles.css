@@ -4,3 +4,19 @@
 
 #map-canvas {
   height: 50vh; }
+
+.btn-circle {
+  border-radius: 100%; }
+
+.btn-add {
+  border: none;
+  color: #9a9a9a;
+  background-color: #b3e0f2; }
+
+.btn-day {
+  border: solid;
+  border-color: #b3e0f2;
+  color: #b3e0f2; }
+
+.drop {
+  width: 90%; }
